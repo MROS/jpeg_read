@@ -611,7 +611,7 @@ def combine_blocks(data):
          for xb in range(xbmax):
             out[yb+offsety][xb+offsetx]= tuple(block[yb][xb])
       offsetx+= xbmax
-      if offsetx>X:
+      if offsetx>=X:
          offsetx= 0
          offsety+= ybmax
 
